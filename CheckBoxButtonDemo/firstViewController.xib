@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="firstViewController">
+            <connections>
+                <outlet property="checkBoxBtn_3" destination="jCZ-Zp-upi" id="0uk-QH-EHn"/>
+                <outlet property="checkBoxButton" destination="10k-lO-dlP" id="LR3-Oj-W4y"/>
+                <outlet property="checkBox_2btn" destination="lyu-Gv-M7W" id="vZ7-qa-6lJ"/>
+                <outlet property="outputAddressLabel" destination="knF-4V-GcI" id="FrS-FG-H4l"/>
+                <outlet property="outputNameLabel" destination="nAZ-EE-qYm" id="zWO-hG-kZO"/>
+                <outlet property="show" destination="zdh-fw-Uxa" id="23E-Yd-7nc"/>
+                <outlet property="showBtnClick" destination="64Y-dl-GiT" id="pMf-5z-sOD"/>
+                <outlet property="showNameLabel" destination="Pqp-sr-reK" id="P6r-2N-P4w"/>
+                <outlet property="showPasswordLabel" destination="8d2-OK-p5J" id="1eq-z2-0Wx"/>
+                <outlet property="showaddressLabel" destination="JMt-Jy-bGB" id="xla-wF-Wgi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10k-lO-dlP">
+                    <rect key="frame" x="221" y="116" width="28" height="25"/>
+                    <state key="normal" title="Button" image="checkbox.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="checkbox-pressed.png"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="88" y="85" width="17" height="27"/>
+                    </variation>
+                    <connections>
+                        <action selector="checkBoxbuttonclick:" destination="-1" eventType="touchUpInside" id="eQh-7u-FpJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Showpassword" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d2-OK-p5J">
+                    <rect key="frame" x="273" y="120" width="104" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="138" y="88" width="125" height="24"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-fw-Uxa">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="129" y="275" width="232" height="35"/>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64Y-dl-GiT">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="show button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="138" y="210" width="132" height="32"/>
+                    </variation>
+                    <connections>
+                        <action selector="showBtnClik:" destination="-1" eventType="touchUpInside" id="JPj-tR-fdn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyu-Gv-M7W">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="Button" image="checkbox.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="88" y="111" width="17" height="20"/>
+                    </variation>
+                    <connections>
+                        <action selector="checkBoxBtn_2Click:" destination="-1" eventType="touchUpInside" id="kre-p1-bSV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="showaddress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMt-Jy-bGB">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="138" y="115" width="125" height="17"/>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCZ-Zp-upi">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" backgroundImage="checkbox.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="checkbox-pressed.png"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="88" y="132" width="16" height="16"/>
+                    </variation>
+                    <connections>
+                        <action selector="checkBoxBtn_3Click:" destination="-1" eventType="touchUpInside" id="hGl-9x-Bf0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="showName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqp-sr-reK">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="138" y="133" width="125" height="17"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAZ-EE-qYm">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="124" y="370" width="263" height="49"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knF-4V-GcI">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="124" y="318" width="237" height="37"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="zdh-fw-Uxa"/>
+                    <exclude reference="64Y-dl-GiT"/>
+                    <exclude reference="lyu-Gv-M7W"/>
+                    <exclude reference="JMt-Jy-bGB"/>
+                    <exclude reference="jCZ-Zp-upi"/>
+                    <exclude reference="Pqp-sr-reK"/>
+                    <exclude reference="nAZ-EE-qYm"/>
+                    <exclude reference="knF-4V-GcI"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="zdh-fw-Uxa"/>
+                    <include reference="64Y-dl-GiT"/>
+                    <include reference="lyu-Gv-M7W"/>
+                    <include reference="JMt-Jy-bGB"/>
+                    <include reference="jCZ-Zp-upi"/>
+                    <include reference="Pqp-sr-reK"/>
+                    <include reference="nAZ-EE-qYm"/>
+                    <include reference="knF-4V-GcI"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox-pressed.png" width="16" height="16"/>
+        <image name="checkbox.png" width="16" height="16"/>
+    </resources>
+</document>

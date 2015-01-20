@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  checkandradiobuttonDemo
+//  CheckBoxButtonDemo
 //
-//  Created by Dropouts on 1/19/15.
-//  Copyright (c) 2015 Dropouts Technologies LLP. All rights reserved.
+//  Created by Arjun Taval on 1/19/15.
+//  Copyright (c) 2015 Arjun Taval. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "firstViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -15,7 +15,11 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    
+    firstViewController *ff=[[firstViewController alloc]init];
+    self.window.rootViewController=ff;
     // Override point for customization after application launch.
     return YES;
 }
